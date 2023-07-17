@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header, footer{
+    
+    margin: 20px auto;
+    padding: 4%;
+    text-align: justify;
+    
+}
+
+header h1 {
+    padding: 10px;
+}
+
+header p {
+    padding: 5px;
+    line-height: 1.5rem;
+}
+
+main {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 4%;
+    
+}
+
+.action, .output{
+    padding: 20px auto;
+}
+.action {
+    
+    width: max(30%, 320px);
+    border-right: 2px black dotted;
+}
+
+.action h2, .output h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.action-list li {   
+    list-style: none;
+    min-width: 320px;
+    max-width: 90%;
+    width: 250px;
+    margin: auto;
+}
+
+.action-list button {
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    border: 1px black solid;
+}
+
+.output {
+    width: max(70%, 320px);
+}
+
+.output div {
+    padding: 20px 15%;
+}
