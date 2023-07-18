@@ -73,10 +73,31 @@ button:active {
     border: 1px black solid;
 }
 
+#ans-btn {
+    visibility: collapse;
+}
+
 .output {
     width: max(70%, 320px);
 }
 
-.output div {
+.output>div {
     padding: 20px 15%;
+}
+
+.content {
+    padding: 10px 0;
+}
+
+#meme-content img {
+    max-width: 100%;
+    max-height: 600px;
+}
+
+blockquote>p, blockquote>cite { 
+    padding: 15px;
+}
+
+#answer-content {
+    visibility: collapse;
 }
