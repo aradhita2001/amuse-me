@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amuse Yourself</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -17,34 +18,39 @@
             <h2>Actions</h2>
             <ul class="action-list">
                 <li>
-                    <button type="button">Show me a meme</button>   
+                    <button id="meme-btn" type="button" onclick = "getMeme()">Show me a meme</button>   
                 </li>
                 <li>
-                    <button type="button">Tell me a joke</button>   
+                    <button id="joke-btn" type="button" onclick="getJoke()">Tell me a joke</button>   
                 </li>
                 <li>
-                    <button type="button">Show me a quote</button>   
+                    <button id="quote-btn" type="button" onclick="getQuote()">Show me a quote</button>   
                 </li>
                 <li>
-                    <button type="button">Riddle me</button>
-                    <button type="button">show me the answer</button>   
+                    <button id="riddle-btn" type="button" onclick="getRiddle()">Riddle me</button>
+                    <button id="ans-btn" type="button">show me the answer</button>   
                 </li>
             </ul>
         </section>
 
         <section class="output">
             <h2>Output</h2>
-            <div class="meme">
+            <div class="meme-display">
                 <p>Reddit memes here</p>
+                <div class="content" id="meme-content"></div>
             </div>
-            <div class="joke">
+            <div class="joke-display">
                 <p>Here is something funny</p>
+                <div class="content" id="joke-content"></div>
             </div>
-            <div class="quote">
+            <div class="quote-display">
                 <p>Time for some inspiration</p>
+                <div class="content" id="quote-content"></div>
             </div>
-            <div class="riddle">
+            <div class="riddle-display">
                 <p>can you solve this?</p>
+                <div class="content" id="riddle-content"></div>
+                <div class="content" id="answer-content"></div>
             </div>
         </section>
         
