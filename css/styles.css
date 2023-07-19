@@ -28,6 +28,8 @@ header p {
 
 main {
     display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
     margin-bottom: 20px;
     padding: 4%;
     
@@ -36,8 +38,8 @@ main {
 .action, .output{
     padding: 20px auto;
 }
+
 .action {
-    
     width: max(30%, 320px);
     border-right: 2px black dotted;
 }
