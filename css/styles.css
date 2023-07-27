@@ -6,15 +6,13 @@
 }
 
 body{
-    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 header, footer{
-    
     margin: 20px auto;
     padding: 4%;
     text-align: justify;
-    
 }
 
 header h1 {
@@ -26,9 +24,13 @@ header p {
     line-height: 1.5rem;
 }
 
+#intro-long {
+    display: none;
+}
+
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100vw;
     margin-bottom: 20px;
     padding: 4%;
@@ -37,11 +39,6 @@ main {
 
 .action, .output{
     padding: 20px auto;
-}
-
-.action {
-    width: max(30%, 320px);
-    border-right: 2px black dotted;
 }
 
 .action h2, .output h2 {
@@ -79,10 +76,6 @@ button:active {
     visibility: collapse;
 }
 
-.output {
-    width: max(70%, 320px);
-}
-
 .output>div {
     padding: 20px 15%;
 }
@@ -96,10 +89,44 @@ button:active {
     max-height: 600px;
 }
 
-blockquote>p, blockquote>cite { 
-    padding: 15px;
+blockquote>cite { 
+    line-height: 3em;
 }
+
 
 #answer-content {
     visibility: collapse;
+}
+
+footer{
+    font-size: .8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    #intro-long {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    header, main, footer{
+        margin: auto;
+        max-width: 1200px;
+       
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .action{
+        flex-basis: 30%;
+    }
+
+    .output {
+        flex-basis: 70%;
+    }
 }
